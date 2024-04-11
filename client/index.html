@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cliente: Site de cachorros</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <main>
@@ -18,11 +19,9 @@
       <hr />
 
       <section class="lista-de-cachorros">
-        <h2>Lista de cachorro</h2>
+        <h2>Lista de cachorros</h2>
         <ul id="lista-de-cachorros">
-          <li><button>teste</button></li>
-          <li><button>teste</button></li>
-          <li><button>teste</button></li>
+          <!-- <li><button onclick="exibirDetalhes('1')">teste</button></li> -->
         </ul>
       </section>
 
@@ -31,33 +30,19 @@
       <section class="detalhes">
         <h2>Detalhes</h2>
 
-        <p><strong>Nome: </strong><span id="detalhes-nome">nome</span></p>
+        <p>
+          <strong>Nome: </strong
+          ><span id="detalhes-nome">Selecione um cachorro</span>
+        </p>
         <img
           id="detalhes-imagem"
-          src="https://upload.wikimedia.org/wikipedia/commons/1/18/Samojed00.jpg"
-          alt="teste"
+          src="https://i.pinimg.com/736x/fc/cd/1e/fccd1e57cfd64b896b829b4647bbfabc.jpg"
+          alt="logo-padrão"
         />
 
         <h3>Caracteristicas</h3>
         <div id="detalhes-caracteristicas">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
-            pariatur nulla inventore assumenda earum molestiae minus ab,
-            perferendis, rem vel dolorum, odio sequi repudiandae quia fuga sit
-            accusantium nisi ipsam.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
-            expedita quae harum ab? Tempore, aspernatur voluptatum consequuntur
-            maxime ea, eius natus alias animi magnam atque neque, quae voluptas
-            totam sapiente.
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
-            maxime molestiae nisi officia laudantium accusamus commodi, eum nam
-            explicabo minima suscipit. Consequuntur dicta amet deleniti eum enim
-            nam possimus blanditiis!
-          </p>
+          <p>Selecione um cachorro.</p>
         </div>
       </section>
     </main>
