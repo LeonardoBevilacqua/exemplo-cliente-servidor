@@ -1,6 +1,5 @@
-import { Cachorro } from "./tipos";
 /**
- * @type {Cachorro[]}
+ * @type {import("./tipos.js").Cachorro[]}
  */
 export const cachorros = [
   {

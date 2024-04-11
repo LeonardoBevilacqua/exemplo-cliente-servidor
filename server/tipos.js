@@ -11,7 +11,3 @@
  * @property {string} imagem
  * @property {string[]} caracteristicas
  */
-
-const Tipos = {};
-
-export default Tipos;
