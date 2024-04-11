@@ -15,6 +15,23 @@ app.get("/lista-de-cachorros", function (_req, res) {
   res.json(listaDeCachorros);
 });
 
+app.get("/cachorro/detalhes/:id", function (req, res) {
+  // entrada: Pega o id passado pela url e coloca em uma constante
+  const id = req.params.id;
+  /** @type {Cachorro} */
+  let cachorro = {};
+
+  // processamento: pega a lista de cachorros, e busca pelo item onde o id seja igual ao passado na url
+  for (let i = 0; i < cachorros.length; i++) {
+    if (cachorros[i].id === id) {
+      cachorro = cachorros[i];
+    }
+  }
+
+  // saida: retorna os detalhes do cachorro, caso foi encontrado
+  res.json(cachorro);
+});
+
 app.listen(porta, () => {
   console.log(`Servidor esta executando na porta ${porta}`);
 });
