@@ -8,7 +8,7 @@ const porta = 5000;
 app.use(json());
 app.use(cors());
 
-app.get("/lista-de-cachorros", (_req, res) => {
+app.get("/lista-de-cachorros", function (_req, res) {
   // processamento: pega a lista de cachorros, e uma por uma pega o nome e coloca na lista
   const listaDeCachorros = cachorros.map((cachorro) => cachorro.nome);
   // retorna a lista de nome de cachorros
