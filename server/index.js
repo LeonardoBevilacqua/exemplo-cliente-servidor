@@ -10,7 +10,11 @@ app.use(cors());
 
 app.get("/lista-de-cachorros", function (_req, res) {
   // processamento: pega a lista de cachorros, e uma por uma pega o nome e coloca na lista
-  const listaDeCachorros = cachorros.map((cachorro) => cachorro.nome);
+  /** @type {ListaDeCachorros[]} */
+  const listaDeCachorros = cachorros.map((cachorro) => ({
+    id: cachorro.id,
+    nome: cachorro.nome,
+  }));
   // saida: retorna a lista de nome de cachorros
   res.json(listaDeCachorros);
 });
