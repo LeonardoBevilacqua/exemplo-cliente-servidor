@@ -3,9 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Client</title>
+    <title>Cliente: Site de cachorros</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Hello World</h1>
+    <main>
+      <h1>Cliente: Site de cachorros</h1>
+
+      <p>
+        Nesse site, é feito uma busca no servidor para listar nomes de
+        cachorros, e ao clicar é exibido detalhes do cachorro.
+      </p>
+
+      <hr />
+
+      <section class="lista-de-cachorros">
+        <h2>Lista de cachorro</h2>
+        <ul id="lista-de-cachorros">
+          <li><button>teste</button></li>
+          <li><button>teste</button></li>
+          <li><button>teste</button></li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section class="detalhes">
+        <h2>Detalhes</h2>
+
+        <p><strong>Nome: </strong><span id="detalhes-nome">nome</span></p>
+        <img
+          id="detalhes-imagem"
+          src="https://upload.wikimedia.org/wikipedia/commons/1/18/Samojed00.jpg"
+          alt="teste"
+        />
+
+        <h3>Caracteristicas</h3>
+        <div id="detalhes-caracteristicas">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+            pariatur nulla inventore assumenda earum molestiae minus ab,
+            perferendis, rem vel dolorum, odio sequi repudiandae quia fuga sit
+            accusantium nisi ipsam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
+            expedita quae harum ab? Tempore, aspernatur voluptatum consequuntur
+            maxime ea, eius natus alias animi magnam atque neque, quae voluptas
+            totam sapiente.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
+            maxime molestiae nisi officia laudantium accusamus commodi, eum nam
+            explicabo minima suscipit. Consequuntur dicta amet deleniti eum enim
+            nam possimus blanditiis!
+          </p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
